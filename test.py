@@ -31,5 +31,19 @@ name = input('What is your name: ');
 weight = float(input('What is your weight in lbs: '));
 weight_convert = weight * 0.453;
 roundup_con_weight = round(weight_convert, 2)
-print(roundup_con_weight);
+print('Your weight in kg:' roundup_con_weight);
 '''
+
+name_first = input('What is your first name: ');
+name_middle = input('What is your middle name: ');
+
+while name_middle == (''):
+    print("Please Enter Middle name it can't be Empty or type 'NA'")
+    name_middle = input('What is your middle name: ');
+name_last = input('What is your last name: ');
+
+if name_middle == 'NA':
+    print(name_last, name_first);
+else:
+    
+    print(name_last, name_middle, name_first);
