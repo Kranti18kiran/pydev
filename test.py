@@ -1,11 +1,35 @@
-num1= 5;
-num2 = 10;
+'''
+n = input("Enter value: ");
+even = 0;
+odd = 0;
 
-#adding 2 values
-sum_result = num1 + num2;
+for i in n:
+    if int(i)%2==0:
+        even = even+int(i)
+    else:
+        odd = odd+int(i)
+print(even, odd)
+'''
+'''
+name = input('Enter new patient: ');
+age = int(input('enter age: '));
+is_new = True;
 
-#_print summary_Sum
+if age > 20:
+    print('he already exist');
+else:
     
-print(f"sum value of {num1} & {num2} is: {sum_result}");
+    print('Hi ' + name, age, 'New Patient')
 
- 
+name = input('What is your name: ');
+color = input('What is your favourite color? ');
+
+print(name + ' likes ' + color );
+
+# weight conversion from lbs to kg
+name = input('What is your name: ');
+weight = float(input('What is your weight in lbs: '));
+weight_convert = weight * 0.453;
+roundup_con_weight = round(weight_convert, 2)
+print(roundup_con_weight);
+'''
